@@ -1,0 +1,339 @@
+@charset 'utf-8';
+
+@import "color.scss";
+@import "font.scss";
+@import "modal.scss";
+
+// COMMON STYLE
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%; /* body와 html의 높이를 100%로 설정 */
+	overflow-y: auto; /* 스크롤 허용 */
+}
+
+* {
+	font-family: "Noto Sans KR", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100vw;
+	margin: 0 auto;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: $main-font-color;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+button {
+	@include button;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.mt60 {
+	margin-top: 60px;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	padding: 5.2vw;
+	position: fixed;
+	top: 0;
+	background-color: $white;
+
+	img {
+		cursor: pointer;
+	}
+}
+
+nav {
+	border-top: 1px solid $grey;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	bottom: 0;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	padding: 4vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	z-index: 999;
+	background-color: $white;
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		gap: 10px;
+		background-color: $white;
+
+		li {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex: 1;
+			padding: 17px;
+			border-radius: 10px;
+		}
+
+		.navOn {
+			background-color: $main-color;
+		}
+	}
+}
+
+section {
+	padding: 6vw 4.8vw;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	gap: 30px;
+	overflow: visible;
+
+	.mainDate {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+
+		span {
+			font-weight: 500;
+			font-family: "Montserrat", sans-serif;
+			color: $grey;
+			font-size: 16px;
+			letter-spacing: -0.5px;
+
+			&:last-child {
+				font-weight: 700;
+				color: $grey2;
+				font-size: 30px;
+				letter-spacing: -0.5px;
+			}
+		}
+	}
+
+	.year {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		select {
+			padding: 2vw;
+			border: none;
+			font-size: 16px;
+			font-weight: 700;
+			outline: none;
+			color: $main-font-color;
+			font-family: "Montserrat", sans-serif;
+			letter-spacing: 0.3px;
+		}
+	}
+
+	.swiper {
+		width: 100%;
+		height: 400px;
+		overflow: hidden;
+
+		.swiper-wrapper {
+			display: flex;
+
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				transition: transform 0.3s ease;
+				opacity: 0.5;
+				width: 80%;
+
+				position: relative;
+
+				.img-wrapper {
+					position: relative;
+					width: 100%;
+					height: 100%;
+
+					img {
+						display: block;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						filter: brightness(
+							0.7
+						); // 이미지를 약간 어둡게 만들어서 흐리게 보이는 효과
+					}
+				}
+
+				.date {
+					position: absolute;
+					top: 10px;
+					left: 20px;
+					z-index: 2; // 투명 레이어보다 위에 위치하도록 설정
+
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+					span {
+						color: #fff;
+						font-weight: 500;
+						font-size: 28px;
+						font-family: "Montserrat", sans-serif;
+
+						&:first-child {
+							font-size: 50px;
+							font-weight: 600;
+						}
+					}
+				}
+
+				.profile {
+					position: absolute;
+					top: 20px;
+					left: 20px;
+					z-index: 2; // 투명 레이어보다 위에 위치하도록 설정
+
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					width: calc(100% - 40px);
+
+					.profileImg {
+						display: flex;
+						align-items: center;
+						gap: 10px;
+
+						img {
+							border-radius: 50px;
+							width: 35px;
+							height: 35px;
+							cursor: pointer;
+						}
+
+						.profileInfo {
+							display: flex;
+							flex-direction: column;
+							align-items: flex-start;
+
+							span {
+								color: $white;
+								font-family: "Montserrat", sans-serif;
+								font-weight: 600;
+								font-size: 0.8rem;
+
+								&:last-child {
+									font-weight: 400;
+									font-size: 0.6rem;
+								}
+							}
+						}
+					}
+
+					.follow {
+						font-family: "Montserrat", sans-serif;
+						font-weight: 600;
+						font-size: 0.6rem;
+						text-align: center;
+
+						color: $white;
+
+						padding: 6px 10px;
+						border-radius: 50px;
+						border: none;
+
+						cursor: pointer;
+
+						background-color: transparent;
+						border: 1px solid $white;
+					}
+				}
+			}
+
+			.swiper-slide-active {
+				opacity: 1;
+				transform: scale(1);
+			}
+
+			.swiper-slide-prev,
+			.swiper-slide-next {
+				transform: scale(0.9);
+				opacity: 0.4;
+			}
+		}
+	}
+}
+
+.btnWrap {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2.5vw;
+	flex-direction: column;
+	gap: 30px;
+
+	padding-bottom: 125px; /* nav의 높이만큼 패딩 추가 */
+
+	p {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		gap: 3px;
+
+		span {
+			font-weight: 400;
+			font-family: "Noto Sans KR", sans-serif;
+			font-size: 0.95rem;
+			color: $grey3;
+		}
+	}
+
+	.btn {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+
+		img {
+			width: 12px;
+			height: 12px;
+			margin-top: 2px;
+		}
+	}
+}

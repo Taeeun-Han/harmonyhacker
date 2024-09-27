@@ -62,7 +62,7 @@ header {
   height: 60px;
   display: flex;
   justify-content: space-between;
-  padding: 5.2vw;
+  padding: 20px;
   position: fixed;
   top: 0;
   background-color: #ffffff;
@@ -79,7 +79,7 @@ nav {
   bottom: 0;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding: 4vw;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,7 +108,7 @@ nav ul .navOn {
 }
 
 section {
-  padding: 6vw 4.8vw;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,7 +268,7 @@ section .swiper .swiper-wrapper .swiper-slide-next {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2.5vw;
+  padding: 20px;
   flex-direction: column;
   gap: 30px;
   padding-bottom: 125px; /* nav의 높이만큼 패딩 추가 */

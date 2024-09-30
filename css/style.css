@@ -66,6 +66,19 @@
   text-align: center;
   font-size: 500;
 }
+.modal-background .loading a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-background .loading a button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #c7c7c7;
+}
 
 html,
 body {
@@ -183,6 +196,28 @@ nav ul .navOn {
   background-color: #DEC1E5;
 }
 
+.bottom {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom a {
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+}
+.bottom a button {
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #DEC1E5;
+}
+
 section {
   padding: 20px;
   display: flex;
@@ -230,7 +265,7 @@ section .year select {
 }
 section .swiper {
   width: 100%;
-  height: 400px;
+  height: 300px;
   overflow: hidden;
 }
 section .swiper .swiper-wrapper {
@@ -240,7 +275,8 @@ section .swiper .swiper-wrapper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  height: 100%;
+  height: 300px;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,8 +287,8 @@ section .swiper .swiper-wrapper .swiper-slide {
 }
 section .swiper .swiper-wrapper .swiper-slide .img-wrapper {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 300px;
 }
 section .swiper .swiper-wrapper .swiper-slide .img-wrapper img {
   display: block;
@@ -390,9 +426,15 @@ section .btnWrap .btn img {
   justify-content: center;
   align-items: center;
 }
-.writingDiary .btnWrap button {
+.writingDiary .btnWrap a {
   width: 100%;
-  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.writingDiary .btnWrap a button {
+  width: 100%;
+  padding: 10px;
   border-radius: 10px;
   border: none;
   background-color: #FADADD;
@@ -459,7 +501,13 @@ section .btnWrap .btn img {
   width: 100%;
   gap: 20px;
 }
-.selection .selectionBtnWrap button {
+.selection .selectionBtnWrap a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selection .selectionBtnWrap a button {
   background-color: #DDEDEA;
   padding: 10px 16px;
   border-radius: 10px;
@@ -472,8 +520,9 @@ section .btnWrap .btn img {
   word-break: keep-all;
   line-height: 1.5;
   cursor: pointer;
+  width: 100%;
 }
-.selection .selectionBtnWrap button:last-child {
+.selection .selectionBtnWrap a .music {
   background-color: #FADADD;
 }
 

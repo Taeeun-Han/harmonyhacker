@@ -35,208 +35,114 @@
 
 <body>
 
-    <div class="container">
+    <div class="container login">
 
-        <header class="header">
-            <img src="./img/search.svg" alt="검색">
-            <img src="./img/menu.svg" alt="메뉴">
+        <header class="loginHeader">
+            <div class="headerWrap">
+
+                <div class="header-left">
+                    <div class="icon">
+                        <a href="./main.html">
+                            <img src="./img/arrow-left-white.svg" alt="뒤로가기">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header-center">
+                    <div class="txt">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                </div>
+
+            </div>
         </header>
 
-        <section class="mt60">
-            <div class="mainDate">
-                <span>September 27, Friday</span>
-                <span>HOME</span>
-            </div>
-        </section>
 
-        <section>
-            <!-- <div class="year">
-                <select>
-                    <option value="2024">2024</option>
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                </select>
-            </div> -->
-
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="img-wrapper">
-                            <img src="./img/cover1.png" alt="앨범커버">
-                        </div>
-
-                        <div class="profile">
-                            <div class="profileImg">
-                                <img src="./img/profile.jpg" alt="프로필사진">
-
-                                <div class="profileInfo">
-                                    <span>Taehee Kim</span>
-                                    <span>July 08, Monday</span>
-                                </div>
-                            </div>
-
-
-                            <button class="follow">+ Follow</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="img-wrapper">
-                            <img src="./img/cover2.jpg" alt="앨범커버">
-                        </div>
-
-                        <div class="profile">
-                            <div class="profileImg">
-                                <img src="./img/profile.jpg" alt="프로필사진">
-
-                                <div class="profileInfo">
-                                    <span>Taehee Kim</span>
-                                    <span>July 08, Monday</span>
-                                </div>
-                            </div>
-
-
-                            <button class="follow">+ Follow</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="img-wrapper">
-                            <img src="./img/cover3.jpeg" alt="앨범커버">
-                        </div>
-
-                        <div class="profile">
-                            <div class="profileImg">
-                                <img src="./img/profile.jpg" alt="프로필사진">
-
-                                <div class="profileInfo">
-                                    <span>Taehee Kim</span>
-                                    <span>July 08, Monday</span>
-                                </div>
-                            </div>
-
-
-                            <button class="follow">+ Follow</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="img-wrapper">
-                            <img src="./img/cover4.jpg" alt="앨범커버">
-                        </div>
-
-                        <div class="profile">
-                            <div class="profileImg">
-                                <img src="./img/profile.jpg" alt="프로필사진">
-
-                                <div class="profileInfo">
-                                    <span>Taehee Kim</span>
-                                    <span>July 08, Monday</span>
-                                </div>
-                            </div>
-
-
-                            <button class="follow">+ Follow</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="img-wrapper">
-                            <img src="./img/cover5.jpg" alt="앨범커버">
-                        </div>
-
-                        <div class="profile">
-                            <div class="profileImg">
-                                <img src="./img/profile.jpg" alt="프로필사진">
-
-                                <div class="profileInfo">
-                                    <span>Taehee Kim</span>
-                                    <span>July 08, Monday</span>
-                                </div>
-                            </div>
-
-
-                            <button class="follow">+ Follow</button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="img-wrapper">
-                            <img src="./img/cover6.jpg" alt="앨범커버">
-                        </div>
-
-                        <div class="profile">
-                            <div class="profileImg">
-                                <img src="./img/profile.jpg" alt="프로필사진">
-
-                                <div class="profileInfo">
-                                    <span>Taehee Kim</span>
-                                    <span>July 08, Monday</span>
-                                </div>
-                            </div>
-
-
-                            <button class="follow">+ Follow</button>
-                        </div>
-
-                    </div>
-
-                    <!-- Swiper JS -->
-                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <div class="wrap">
+            <div class="login-txt">
+                <div>
+                    <p>Welcome!</p>
+                    <p>하모니해커에 오신 것을 환영합니다.</p>
                 </div>
+
+
+                <span>로그인을 해주세요.</span>
             </div>
 
-            <div class="btnWrap">
-                <p>
-                    <span class="mb20">오늘, 어떤 감정들이 스쳐 지나갔나요?</span>
-                    <span>당신의 이야기를 일기로 담고,</span>
-                    <span>그 감정들을 노래로 풀어보세요.</span>
-                </p>
+            <main>
 
-                <a href="./writing.html">
-                    <button class="btn">내 이야기로 앨범 만들기
-                        <img src="./img/arrow-right.svg" alt="우측화살표">
-                    </button>
-                </a>
+                <div class="login-form">
 
-            </div>
-        </section>
+                    <!-- 이메일 입력 -->
+                    <div class="login-input">
+                        <p>이메일 <span>*</span></p>
+                        <input type="text" placeholder="이메일을 입력해주세요">
+
+                        <!-- text 오류 날 때 -->
+                        <div class="err-text" style="display: none;">
+                            <img src="./img/error.svg" alt="에러아이콘">
+                            <p>이미 사용중인 이메일입니다.</p>
+                        </div>
+                    </div>
 
 
+                    <!-- 비밀번호 입력 -->
+                    <div class="login-input">
+                        <p>비밀번호 <span>*</span></p>
+                        <input type="text" placeholder="최소 8자리 및 영문 소문자 + 숫자 조합">
 
-        <nav class="nav">
-            <ul>
-                <li class="navOn">
-                    <img src="./img/nav/on-home.svg" alt="홈">
-                </li>
+                        <!-- text 오류 날 때 -->
+                        <div class="err-text">
+                            <img src="./img/error.svg" alt="에러아이콘">
+                            <p>비밀번호가 일치하지 않습니다.</p>
+                        </div>
+                    </div>
 
-                <li>
-                    <img src="./img/nav/search.svg" alt="검색">
-                </li>
 
-                <li>
-                    <img src="./img/nav/alarm.svg" alt="알림">
-                </li>
+                    <div class="login-option">
+                        <div class="toggle">
+                            <input type="checkbox" id="toggle">
 
-                <li>
-                    <img src="./img/nav/mypage.svg" alt="마이페이지">
-                </li>
-            </ul>
-        </nav>
+                            <label for="toggle" class="toggle-switch">
+                                <span class="toggle-button"></span>
+                            </label>
 
+                            <span>로그인 상태 유지</span>
+                        </div>
+
+                        <div class="forgot-pw">
+                            <p>아이디/비밀번호 찾기</p>
+                        </div>
+                    </div>
+
+                    <div class="login-button">
+                        <a href="./main.html">
+                            <button>로그인</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 일반회원 로그인 일 때만 표시 -->
+                <div class="social-login">
+                    <img src="./img/apple.png" alt="애플">
+                    <img src="./img/google.svg" alt="구글">
+                    <img src="./img/kakao.png" alt="카카오톡">
+                    <img src="./img/naver.png" alt="네이버">
+                </div>
+
+                <div class="join">
+                    <p>아직 회원이 아니신가요?
+                        <a href="./join/join01-terms.html">
+                            <span>회원가입</span>
+                        </a>
+                    </p>
+                </div>
+            </main>
+        </div>
     </div>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1.3,
-            centeredSlides: true,
-            spaceBetween: 0,
-            loop: true,
-            spaceBetween: 10,
-        });
-    </script>
 
 </body>
 

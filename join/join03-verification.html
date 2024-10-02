@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=360, user-scalable=no">
+    <title>Art Stage</title>
+
+
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- CSS 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+    <!-- Script 연결 -->
+    <script defer src="../js/main.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container join">
+
+        <header>
+            <div class="headerWrap">
+
+                <div class="header-left">
+                    <div class="icon">
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                arrow_back_ios
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header-center">
+                    <div class="txt">
+                        <p>본인인증</p>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                </div>
+
+            </div>
+        </header>
+
+        <div class="wrap">
+            <main class="joinMain">
+                <!-- 프로그레스 바 -->
+                <div class="progress-bar">
+                    <progress id="progress" value="60" min="0" max="100"></progress>
+                    <img src="../img/icon/flag.svg" alt="깃발">
+                </div>
+
+                <div class="login-form">
+                    <div class="login-input">
+                        <p>본인인증 <span>*</span></p>
+                        <button>본인인증 하기</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- 버튼 비활성화시 -->
+        <div class="bottomBtnWrap" style="display: none;">
+            <div class="bottomBtn">
+                <a href="../join/join04-personal-info.html">
+                    <button>다음</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- 버튼 활성화시 -->
+        <div class="bottomBtnWrap">
+            <div class="bottomBtn">
+                <a href="../join/join04-personal-info.html">
+                    <button style="background-color: #e7e7e7;">다음</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
